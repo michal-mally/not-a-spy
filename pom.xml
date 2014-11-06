@@ -12,6 +12,9 @@
 
         <!-- plugin versions -->
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+
+        <!-- dependency versions -->
+        <dropwizard.version>0.7.0</dropwizard.version>
     </properties>
 
     <groupId>pl.helenium.learning.dropwizard</groupId>
@@ -34,5 +37,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
